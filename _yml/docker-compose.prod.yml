@@ -10,7 +10,6 @@ services:
       - BACKEND_ADDRESS=$BACKEND_ADDRESS
 
   redis:
-    restart: always
     image: redis:6-alpine
     container_name: ${COMPOSE_PROJECT_NAME}_redis
     volumes:
