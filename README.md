@@ -1,4 +1,5 @@
-# docker-compose-vue-ducts ver.0.2.3
+# docker-compose-vue3-ducts ver.0.1.0
+
 "Vanilla" Docker Compose environment for Vue CLI frontend and DUCTS backend
 
 ## What it does
