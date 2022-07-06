@@ -1,4 +1,4 @@
-# docker-compose-vue3-ducts ver. 0.1.1
+# docker-compose-vue3-ducts ver. 0.1.2
 
 "Vanilla" Docker Compose environment for Vue CLI frontend and DUCTS backend
 
@@ -109,3 +109,14 @@ Say your production server is at https://yourdomain.com/ and development server 
 - Redis database (prod) is at: yourdomain.com:6379 (by default, or whatever specified in `.env`)
 
 - Redis database (dev) is at: yourdomain.com:6380 (by default, or whatever specified in `.env`)
+
+## Update logs
+
+- ver. 0.1.2 (2022-07-06 11:45)
+  - added vue-router
+
+- ver. 0.1.1 (2022-07-05 11:00)
+  - added @iflb/ducts-client
+
+- ver. 0.1.0 (2022-07-03 00:05)
+  - vite + vue3
