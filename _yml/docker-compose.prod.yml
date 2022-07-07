@@ -16,8 +16,6 @@ services:
      - ../redis/data:/data
     ports:
       - "$REDIS_PORT:6379"
-    depends_on: 
-      - rev-proxy
     networks:
       default:
         ipv4_address: $REDIS_ADDRESS
@@ -36,8 +34,6 @@ services:
     environment:
       - DOMAIN_NAME=$DOMAIN_NAME
       - DEV_DOMAIN_NAME=$DEV_DOMAIN_NAME
-    depends_on: 
-      - rev-proxy
     networks:
       default:
         ipv4_address: $FRONTEND_ADDRESS
@@ -54,8 +50,6 @@ services:
     environment:
       - HOME=$BACKEND_HOME
       - REDIS_ADDRESS=$REDIS_ADDRESS
-    depends_on: 
-      - rev-proxy
     networks:
       default:
         ipv4_address: $BACKEND_ADDRESS
