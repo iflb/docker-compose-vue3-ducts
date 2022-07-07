@@ -112,6 +112,9 @@ Say your production server is at https://yourdomain.com/ and development server 
 
 ## Update logs
 
+- ver. 0.1.4 (2022-07-07 13:45)
+  - removed depends_on from .yml files and set "@" alias in tsconfig.json
+
 - ver. 0.1.3 (2022-07-06 18:40)
   - fixed some things to remove frontend build error
 

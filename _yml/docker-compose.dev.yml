@@ -31,8 +31,6 @@ services:
       - HTTP_PORT=$HTTP_PORT
       - DEV_DOMAIN_NAME=$DEV_DOMAIN_NAME
       - DEV_HTTP_PORT=$DEV_HTTP_PORT
-    depends_on: 
-      - frontend
     networks:
       default:
         ipv4_address: $DEV_FRONTEND_ADDRESS
@@ -52,8 +50,6 @@ services:
     environment:
       - HOME=$BACKEND_HOME
       - REDIS_ADDRESS=$DEV_REDIS_ADDRESS
-    depends_on: 
-      - backend
     networks:
       default:
         ipv4_address: $DEV_BACKEND_ADDRESS
